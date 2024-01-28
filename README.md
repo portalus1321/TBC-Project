@@ -1,7 +1,7 @@
 Project Title and Description:
 Tbc react course description
 
-this is responisve vebsite 
+this is responisve weebsite 
 used javascript html and css 
 
 used inspect and rewerite tbc example website
