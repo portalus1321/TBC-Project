@@ -1,0 +1,1508 @@
+body
+{
+    background: white;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+body, html {
+    height: 100%;
+}
+div {
+    display: block;
+    
+}
+li {
+    text-align: -webkit-match-parent;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+section {
+    display: block;
+}
+body, html {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    
+}
+.Main_Container
+{
+    position: relative;
+}
+.Frame_Container
+{
+
+    width: 100%;
+}
+.Root_Frame
+{
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    top: var(--wix-ads-height);
+}
+.Master_Frame
+{
+
+    -ms-grid-rows: max-content max-content min-content max-content;
+    -ms-grid-columns: 100%;
+    align-items: start;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content min-content max-content;
+    justify-content: stretch;
+}
+
+.Main_Header
+{
+    position: relative;
+    grid-area: 1/1/2/2;
+    z-index: 3;
+    
+}
+
+.Site_Header
+{
+    position: fixed !important;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+    background: rgb(43,43,43);
+}
+
+.Site_Header_Container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.Site_Header_Container_Grid
+{
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.Logo_Place
+{
+    width: 182px;
+    height: 40px;
+    position: relative;
+    margin: 22px 0px 22px 200px;
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+   
+}
+
+.Drop_Down_Container
+{
+    overflow-x: visible;
+    
+    height: 26px;
+    position: relative;
+    margin: 29px 0px 29px calc((100% - 980px) * 0.5);
+    left: 526px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+  
+}
+.Drop_Down_nav
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+}
+.Drop_Down_Ul
+{
+    text-align: center;
+    height: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+  
+}
+.Drop_Down_Element
+{
+    width: 113px;
+    height: 26px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    visibility: inherit;
+    display: inline-block;
+    
+
+    font: var(--fnt,var(--font_1));
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+  
+}
+.Nav_Link
+{ 
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+   
+    
+}
+.N_LDiv1
+{
+    --pad: 5px;
+    padding: 0 var(--pad,5px);
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    
+    display: block;
+    width: 113px;
+    height: 26px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    visibility: inherit;
+
+}
+.N_LDiv2
+{
+    text-align: right;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    display: block;
+    width: 113px;
+    height: 26px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    visibility: inherit;
+    cursor: pointer;
+    
+}
+
+#menubtn
+{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    height: 21px;
+    justify-content: space-between;
+    transition: transform .33s ease-out;
+    width: 28px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+
+.menunavactiv{
+    display: none;
+    z-index: 1;
+    position:fixed;
+    width: 50vw;
+    height: 100vh;
+    right: 0;
+    background-color: rgb(36, 36, 36);
+}
+.Drop_Down_Element p {
+    width: 100%;
+    height: 30px;
+}
+#MenuDD ul{
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    top: 84px;
+    
+    background-color: rgb(43, 43, 43);
+  
+}
+#MenuDD ul li
+{
+    height: 50px;
+    transform: translateX(100%);
+}
+#menubtn .active
+{
+    transform: rotate(45deg);
+    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+}
+#menubtn .active .MBT_1{
+    transform-origin: right;
+    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+    transform: rotate(-90deg) translateX(4px);}
+#menubtn .active .MBT_3{
+    transform-origin: left;
+    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+    transform: rotate(-90deg) translateX(-4px);
+}
+#menuic
+{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 21px;
+    justify-content: space-between;
+    transition: transform .33s ease-out;
+    width: 26px;
+    right: 50px;
+    position: absolute;
+
+
+}
+
+.MBT_1
+{
+    transform-origin: right;
+    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+    width: 50%;
+    background-color: white;
+    border-radius: 1.5px;
+    height: 3px;
+}
+.MBT_2
+{
+    background-color: white;
+    border-radius: 1.5px;
+    height: 3px;
+    width: 100%;
+}
+.MBT_3
+{
+    background:white;
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+    width: 50%;
+    border-radius: 1.5px;
+    height: 3px;
+    
+}
+.LDiv_P
+{
+    --txt: 244,244,244;
+    --trans: color 0.4s ease 0s;
+    text-align: right;
+    line-height: 26px;
+    color: rgb(var(--txt,var(--color_15)));
+    display: inline-block;
+    padding: 0 10px;
+    transition: var(--trans,color .4s ease 0s);
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.LDiv_P:hover{
+    color: rgb(21, 67, 99);
+    cursor: pointer;
+}
+
+/* palceholder */
+.S_H_PlaceHolder
+{
+    grid-area: 1/1/2/2;
+    height: 84px;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* main content style */
+.Main_Container
+{
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    align-self: stretch;
+    grid-area: 3/1/4/2;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+}
+.Site_Pages
+{
+    position: relative;
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.Site_PagesTG
+{
+ 
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.M_CDiv1
+{
+    width: auto;
+    min-height: 40px;
+    left: 0;
+    margin-left: 0;
+    min-width: 0;
+    grid-area: 1/1/1/1;
+    height: 100%;
+    position: relative;
+    align-self: stretch!important;
+    justify-self: stretch!important;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.M_CDiv2{
+    height: auto;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.M_CDivContainer
+{
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.M_CDivContent
+{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.M_CDiv_Grind_Container
+{
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 40px;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    grid-template-columns: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/* sections --- */
+     /* sec-1 */
+    .MDGC_Image
+    {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        justify-self: start;
+        align-self: start;
+        overflow: visible;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+        width: 100%;
+        
+
+    }
+    .IMG_Layer1
+    {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .IMG_Layer2
+    {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+
+        background: transparent;
+        border: 0;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+    .IMG_Layer3
+    {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 1;
+        display: block;
+        height: 100%;
+    }
+    .MDGC_IN_Image
+    {
+        position: relative;
+        object-fit: cover;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+
+
+ 
+    }
+    .MDGC_IMG_Txt_PHDiv
+    {
+        height: auto;
+        width: 980px;
+        position: relative;
+        margin: 96px 0px 10px calc((100% - 980px) * 0.5);
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+
+        overflow-wrap: break-word;
+        text-align: start;
+        font: var(--font_3);
+    color: rgb(244, 244, 244);
+    letter-spacing: 0em;
+}
+    /* section-2 */
+
+   .MDGC_Article
+   {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    justify-self: start;
+    align-self: start;
+   }
+   .MDGCA_Cont
+   {
+    column-gap: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+   }
+   .MDGCA_Cont_L1
+   {    
+    background: rgb(43,43,43);
+    width: 100%;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-width: 0;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .MDGCAL1
+   {
+    
+    position: relative;
+    margin: 56px 0px 43px calc((100% - 980px) * 0.5);
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    height: auto;
+    width: 980px;
+    overflow-wrap: break-word;
+ 
+    text-align: start;
+   }
+   .MDGCALH1
+   {
+    font-size: 28px;
+    line-height: 1.6em;
+    margin-block: 0;
+    margin: 0;
+    font: var(--font_0);
+    color: rgb(244, 244, 244);
+    letter-spacing: 0em;
+    color: #F4F4F4;
+   }
+   .MDGCAMore_Div
+   {
+    position: relative;
+    margin: 0px 0px 57px calc((100% - 980px) * 0.5);
+    left: 0px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+    width: 142px;
+    height: 40px;
+   }
+   .MDGCAMore_Div_Link
+   {
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: var(--label-align);
+    min-width: 100%;
+    text-align: initial;
+    width: max-content;
+    touch-action: manipulation;
+    text-decoration: none;
+   }
+   .MDGCAMore_Div_Text
+   {
+    color: var(--corvid-color,rgb(var(--txt,var(--color_15))));
+    font: var(--fnt,var(--font_5));
+    transition: var(--trans,color .4s ease 0s);
+    white-space: nowrap;
+    color: rgb(0, 174, 243);
+    font-size: 20px;
+   }
+
+
+        /* section-3 */
+    .MDGC_Courses
+    {
+      
+        left: 0;
+    margin-left: 0;
+    width: 100%;
+    }    
+    .MDGCC_Cont{
+        height: auto;
+        width: 100%;
+        position: relative;
+        background: rgb(22, 22, 22);
+    }
+    .MDGCC_Cont_L1{
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        min-height: auto;
+        grid-template-rows: min-content 1fr;
+        grid-template-columns: 100%;
+    }
+    .MDGCC_Cont_L1PH
+    {
+        height: auto;
+        width: 554px;
+        position: relative;
+        margin: 34px 0px 67px calc((100% - 980px) * 0.5);
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        overflow-wrap: break-word;
+        text-align: start;
+    }
+
+    .MDGCC_Cont_Grid
+    {
+        width: 980px;
+        position: relative;
+        margin: 0px 0px 58px calc((100% - 980px) * 0.5);
+        left: 0px;
+        grid-area: 2 / 1 / 3 / 2;
+        justify-self: start;
+        align-self: start;
+    }
+    .MDGCC_Cont_GList
+    {
+     direction: ltr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 12.5px 0px;
+    position: relative;
+
+    }
+    .CourseLis3
+    {
+        direction: ltr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 12.5px 0px;
+        position: relative;
+    }
+    .GridListItem
+    {
+        direction: ltr;
+        margin: 12.5px 0px;
+    }
+
+    /* section-3 courses */
+
+
+    .GLI_L1{
+        border-width: 1px 1px 1px 1px;
+        border-style: solid solid solid solid;
+        border-color: rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1);
+        border-radius: 6px 6px 6px 6px;
+        overflow: hidden;
+        margin: 25px 0;
+    }
+    .GLI_L2{
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .GLI_L2_Div1{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background:  rgb(22, 22, 22);
+        
+    }
+    .Course_Image
+    {
+        position: relative;
+        margin: 0px 0px 34px 0;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+    }
+    .CI_L1
+    {
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+    }
+    .CI_L2
+    {
+        overflow: hidden;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .CI_L2 img
+    {
+        width: 300px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 0 #000;
+    position: static;
+
+    }
+    .Course_Title
+    {
+        position: relative;
+        margin: 0px 0px 25px 0;
+        left: 22px;
+        grid-area: 2 / 1 / 3 / 2;
+        justify-self: start;
+        align-self: start;
+        height: auto;
+        width: 266px;
+        overflow-wrap: break-word;
+        text-align: start;
+    }
+    .Course_Title h5
+    {
+        margin-block: 0;
+        margin: 0;
+        color: rgb(244, 244, 244);
+        letter-spacing: 0em;
+    }
+    .Course_Status
+    {
+        position: relative;
+        margin: 0px 0px 10px 0;
+        left: 22px;
+        grid-area: 3 / 1 / 4 / 2;
+        justify-self: start;
+        align-self: start;
+        height: 90px;
+        width: 266px;
+    }
+    .Course_Status p
+    {
+        font-size: 14px;
+        margin-block: 0;
+        margin: 0;
+        color: rgb(244, 244, 244);
+        letter-spacing: 0em;
+    }
+    .Course_Details
+    {
+        position: relative;
+        margin: 0px 0px 21px 0;
+        left: 22px;
+        grid-area: 5 / 1 / 6 / 2;
+        justify-self: start;
+        align-self: start;
+        width: 180px; 
+    }
+    .CD_SVG_D1
+    {
+        position: relative;
+        margin: 14px 0px 10px 0;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+    }
+    .CDetails_C1
+    {
+        height: auto;
+        width: 180px;
+    
+        position: relative;
+    }
+    .CDetails_C2
+    {
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        min-height: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+    }
+    .CD_SVG_D1
+    {
+        position: relative;
+        margin: 14px 0px 10px 0;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        width: 16px;
+        height: 13px;
+    }
+    .CD_Text_Div
+    {
+        position: relative;
+        margin: 0px 0px 0px 0;
+        left: 24px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        width: 156px;
+        height: 37px;
+    }
+    .CD_Text_Div a {cursor: pointer!important;}
+    .CD_Text_Div a span
+    {
+        margin: 0;
+        position: relative;
+        transition: 0;
+        white-space: nowrap;
+        text-align: initial;
+        line-height: 40px;
+        color: rgb(0, 174, 239);
+    }
+    .Course_PH 
+    {
+        visibility: hidden;
+        height: 100px;
+        width: 0;
+        grid-area: 1 / 1 / 5 / 2;
+    }
+    .GLI_MFlex{
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    margin-top: -2px;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    grid-template-columns: 100%;
+    }
+
+
+    /* ---section 4 */
+    .MDGC_Questions{
+        min-width: 980px;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        
+        grid-area: 5 / 1 / 6 / 2;
+        justify-self: start;
+        align-self: start;
+        overflow: visible;
+    }
+    .MDGCQBG{
+    height: 100%;
+    left: 0;
+    mask-size: var(--mask-size,100%);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+    .MDGCQbgL1{
+        height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    }
+    .MDGC_DD_Container
+    {
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    .MDGC_DD_C1
+    {
+        position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    }
+    .MDGC_DD_C2
+    {
+        overflow: hidden;
+        height: auto;
+        width: 980px;
+        position: relative;
+      
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+    }
+  /* acordion */
+
+.accordion {
+    background-color: rgb(22, 22, 22);
+    color: #ffffff;
+    font-size: large;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .MDGC_QMain_H1 {
+    background-color: rgb(22, 22, 22);
+    color: #ffffff;
+    font-size: large;
+    cursor: pointer;
+
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    cursor: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+  }
+  .allquestion_alternative{
+    display: none;
+    position: relative;
+    padding: 18px;
+    color: rgb(0, 174, 243);
+  }
+  .MDGC_QMain_H1 h1{
+    position: relative;
+    transform: translateX(18px);
+   }
+  .MDGC_QMain_H1 h3{
+   position: relative;
+   color: rgb(0, 174, 243);
+  }
+  
+  
+  
+  .active, .accordion:hover {
+    color: rgb(0, 174, 243);
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+  }
+
+  .fakehr
+  {
+    border-top: 1px solid rgb(53, 49, 49);
+  }
+
+
+/* ----------- Parthners */
+.MDGC_Partners{
+    
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgb(43,43,43);
+    position: relative;
+    left: 0px;
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+
+}
+.Slider_container{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+.btnleft
+{
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  left: 0;
+
+}
+.Mid_Container{
+    position: relative;
+ height: auto;
+ width: calc(100% - 400px);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Slide_Frame{
+ position: absolute;
+ display: flex;
+ height: calc(100%);
+ width: 100%;
+
+ justify-content: space-evenly;
+ align-items: center;
+}
+.Slide_Frame_PH
+{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    
+}
+.Slide_element{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Slide_IH_Div{
+    
+    position: relative;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Slide_element img
+{
+    position: relative;
+    width: 100%;
+   
+}
+.btnright{
+    position: absolute;
+    width: 200px;
+
+    height: 100%;
+    right: 0;
+}
+.btnholder{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 40px;
+    fill: white;
+}
+.btnleft .btnholder{
+ right: 0;
+}
+.btnright .btnholder{
+    left: 0;
+
+}
+.btnholder svg
+{
+    cursor: pointer;
+}
+.btnright svg
+{
+    transform: rotate(180deg);
+}
+.btnholder:hover
+{
+    fill: black;
+    transition: 0.4s;
+}
+.Slider_dots{
+    
+}
+.Slider_Grid
+{
+    position: relative;
+    width: calc(100% - 50px);
+    height: calc(100%) ;
+
+}
+  /* --------------- Footer */
+  .Main_Footer
+  {
+    grid-area: 4/1/5/2;
+    background-color: rgb(26, 30, 31);
+    color: white;
+    overflow: hidden;
+  }
+  .MF_Container
+  {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+  }
+  .MFC_1{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .MFC1Div
+  {
+    bottom: 0;
+    box-shadow: var(none,0 0 5px rgba(0,0,0,.7));
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .MFC_2
+  {
+    position: relative;
+    width: 100%;
+  }
+  .MFC2_D1
+  {
+    margin-left: calc((100% - 980px/2));
+    width: 980px;
+  }
+  .MFC2_D1_inner
+  {
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+
+  }
+  .MFC2_D2
+  {
+    position: relative;
+    width: 100%;
+  }
+
+  .FT_COnt
+  {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 200px;
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-template-columns: 100%;
+    overflow: hidden;
+
+  }
+
+  .MFC2_D2_i1
+  {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .MFC2_D2_i2
+  {
+    width: 88px;
+    height: 39px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    justify-self: start;
+    align-self: start;
+  }
+  .MFC2_D2_i3{
+    height: auto;
+    width: 253px;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+  }
+  .MFC2_D2_i3 a
+  {
+     color: white;
+  }
+  .MFC2_D2_i4
+  {
+    width: 162px;
+    height: 24px;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .SocialList
+  {
+    height: 100%;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    list-style: none;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ 
+  }
+  .FBB
+  {
+    display: inline-block;
+    height: 39px;
+    margin: 0 10px 0 0;
+    width: 39px;
+  }
+  .FBB_Link_Inner{
+
+  }
+  .YBB
+  {
+    display: inline-block;
+    height: 39px;
+    margin: 0;
+    width: 39px;
+  }
+  .YBB_Link_Inner{
+
+  }
+
+  .MFC2_D2_i5
+  {
+    width: 162px;
+    height: 39px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+  }
+  .MFC2_D2_5ABtn
+  {
+    cursor: pointer!important;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    text-align: initial;
+    background-color: rgb(0, 174, 243);
+  }
+  .MFC2_D2_5ABtn:hover{
+    background-color: rgb(213, 213, 213);
+    color: rgb(43,43,43);
+    transition: 0.4s;
+  }
+
+  .MFC2_D2_5ASpan{
+    text-align: initial;
+
+    position: relative;
+    white-space: nowrap;
+  }
+  
+
+
+  @media (max-width: 1000px) {
+    .MDGCC_Cont_GList
+    {
+       display: flex !important;
+       flex-direction: column !important;
+       align-items: center !important;
+       justify-content: center !important;
+       margin: 0px 0px;
+    }
+    .CourseLis3{
+        margin: 0;
+    }
+    .GridListItem
+    {
+        margin: -12.5px 0px;
+    }
+    .MDGC_DD_C2
+    {
+        width: 100%;
+    }
+    .Slide_Frame_PH{
+         height: 900px;
+    }
+    .Slide_Frame{
+        flex-direction: column;
+    }
+    .btnleft{
+        display: none;
+    }
+    .btnright{
+        display: none;
+    }
+    .Mid_Container
+    {
+        width: 100%;
+    }
+    .Slide_element
+    {
+        width: 100%;
+    }
+    .MDGC_Questions
+    {
+        min-width: 0;
+    }
+    .MDGC_QMain_H1 h3{
+        display: none;
+        color: rgb(0, 174, 243);
+    }
+    .MDGC_QMain_H1 h3{
+        position: relative;
+        color: rgb(0, 174, 243);
+       }
+    .allquestion_alternative
+    {
+        display: flex;
+    }
+    .MDGCAL1
+    {
+     
+     position: relative;
+     margin: 56px 0px 43px 50px;
+     left: 0px;
+     grid-area: 1 / 1 / 2 / 2;
+     justify-self: start;
+     align-self: start;
+     height: auto;
+     width: calc(100% - 50px);
+     overflow-wrap: break-word;
+  
+     text-align: start;
+    }   
+    .MDGCAMore_Div
+    {
+  
+    margin: 0px 0px 57px 50px;
+    
+    }
+    .MDGCC_Cont_L1PH
+    {
+        margin: 34px 0px 67px 50px;
+    }
+    .MDGC_IMG_Txt_PHDiv{
+        margin: 96px 0px 10px 50px;
+        width: calc(100% - 50px);
+    }
+    .Logo_Place
+    {
+        position: absolute;
+        left: 100px;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .Drop_Down_nav
+    {
+     display: none;   
+    }
+    #menubtn{
+        display: flex;
+    }
+    .menunavactiv
+    {
+      display: flex;
+    }
+}
